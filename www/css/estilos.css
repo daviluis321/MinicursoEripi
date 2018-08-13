@@ -1,5 +1,6 @@
 body{
 	background-color: #f2f2f2;
+	padding-top: 75px;
 }
 
 .titulo {
@@ -15,3 +16,5 @@ body{
 	z-index: 2;
 }
 
+
+    
