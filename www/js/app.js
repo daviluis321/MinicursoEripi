@@ -63,8 +63,8 @@ $(function () {
 
   function onTarefaKeyDown() {
     if (event.which === 13) {
-      addTarefa($("#tarefa").val());
-      $("#tarefa").val("");
+      addTarefa($("#input_text").val());
+      $("#input_text").val("");
     }
   }
 
@@ -123,7 +123,7 @@ $(function () {
   }
 
   function loadTarefas() {
-    $("#tarefa").empty();
+    $("#input_text").empty();
 
     $.getJSON(server + "/tarefas", { usuario: meuLogin })
       .done(function (data) {
@@ -152,7 +152,7 @@ $(function () {
       });
   }
 
-  $("#tarefa").keydown(onTarefaKeyDown);
+  $("#input_text").keydown(onTarefaKeyDown);
 
   $(".tarefa-delete").click(onTarefaDeleteClick);
 
