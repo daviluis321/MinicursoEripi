@@ -25,9 +25,11 @@ $(function () {
   var meuLogin = "teste@email.com";
   var server = "http://livro-capitulo07.herokuapp.com";
 
-  var $lastClicked;
-
+  var $lastClicked; // Armazenar uma tarefa que estamos editando
+  
+  // Deletando o item  com o clique
   function onTarefaDeleteClick() {
+    // O hide esconde o elemento
     $(this).parent(".tarefa-item").off("click").hide("slow", function () {
       $.post(server + "/tarefa",
         {
@@ -152,8 +154,10 @@ $(function () {
       });
   }
 
+  // detectar o uso da tecla
   $("#input_text").keydown(onTarefaKeyDown);
 
+  // detectar o uso do click
   $(".tarefa-delete").click(onTarefaDeleteClick);
 
   $(".tarefa-item").click(onTarefaItemClick);
