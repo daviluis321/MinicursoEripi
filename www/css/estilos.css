@@ -16,5 +16,59 @@ body{
 	z-index: 2;
 }
 
+/*Lista de Tarefas*/
+
+#tarefa, .tarefa-edit {
+	font-size: 1.2em;
+}
+
+#tarefa {
+	width: 33em;
+}
+
+.tarefa-edit {
+	width: 31em;
+}
+
+
+.tarefa-item {
+	padding: 1em;
+	vertical-align: middle;
+}
+
+.tarefa-item:hover {
+	background-color: #eee;
+}
+
+.tarefa-texto {
+	display: block;
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.tarefa-delete {
+	width: 16px;
+	height: 16px;
+
+	background-image: url("../images/delete.gif");
+	background-repeat: no-repeat;
+	
+	display: block;
+	float: right;
+
+	visibility: hidden;
+}
+
+.tarefa-item:hover .tarefa-delete {
+	visibility: visible;
+}
+
+.tarefa-id {
+	visibility: hidden;
+}
+
 
     
