@@ -22,9 +22,7 @@ $(document).ready(function () {
 // lista de tarefas
 
 $(function () {
-  var meuLogin = "teste@email.com";
-  var server = "http://livro-capitulo07.herokuapp.com";
-
+  
   var $lastClicked; // Armazenar uma tarefa que estamos editando
   
   // Deletando o item  com o clique
